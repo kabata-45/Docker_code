@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # pytorch-docker
 ## About
 
@@ -63,3 +64,7 @@ change mount volumes
 2021/03/06
 
 https://hub.docker.com/layers/pytorch/pytorch/1.8.0-cuda11.1-cudnn8-devel/images/sha256-f915e85ca58c8d6c072de080288dd66965ca623744a8392cf5ea0c2df485b23c?context=explore
+=======
+# Docker_code
+Dockerの練習で作成したものです
+>>>>>>> aa3714ffbf9a189dd24de32d73a14a0df9e7b3a1
