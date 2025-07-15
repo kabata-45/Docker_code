@@ -1,0 +1,6 @@
+matplotlib
+pandas
+torchsummary
+timm
+streamlit
+jupyterlab

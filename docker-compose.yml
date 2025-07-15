@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  code-server:
+    build:
+      context: ./Docker
+      dockerfile: Dockerfile
+    #shm_size: '2gb'
+    container_name: code-server 
+    user: "${UID}:${GID}"
+    #command: code-server --port 8080 --bind-addr=0.0.0.0:8080 /home --log debug
+    ports:
+      - 8080:8080
+      - 8888:8888
+    environment:
+      - PASSWORD=password
+      - PYTHONPATH=/usr/local/bin/python3
+    tty: true
+    volumes:
+      - $HOME/.config:/home/coder/.config
+      - $HOME/projects:/home/coder/projects
+      - $HOME:/workspace/
+
